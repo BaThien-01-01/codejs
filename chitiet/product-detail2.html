@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="product-detail.css">
+  <title>Chi Tiết Sản Phẩm</title>
+</head>
+<body>
+  <div class="product-detail-container">
+    <div class="image">
+      <img id="product-image" src="" alt="Sản phẩm">
+    </div>
+    <div class="details">
+      <h1 id="product-name"></h1>
+      <p id="product-price"></p>
+      <p id="product-description"></p>
+      <button id="add-to-cart">Thêm vào giỏ hàng</button>
+      <!-- tại vì nó ngắn bỏ code js trong đây đỡ phức tạp -->
+      <button class="back-button" onclick="history.back()">⬅ Quay lại</button>
+
+    </div>
+  </div>
+  <script src="/products.js"></script>
+  <script src="/chitiet/product-detail.js"></script>
+</body>
+</html>

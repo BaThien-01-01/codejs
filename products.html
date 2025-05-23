@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="products.css">
+  <title>Sản Phẩm</title>
+</head>
+<body>
+  <!-- Header và Menu đã có sẵn trong introduce.html -->
+  <header>
+    <div class="top">
+      <div class="img-logo">
+        <img src="/img/logo.png" alt="Logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+      </div>
+      <div class="cart-icon" id="cartIcon">
+        <a href="/giohang/cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="/index.html">Trang Chủ</a>
+      <a href="/trang giới thiệu/introduce.html">Giới Thiệu</a>
+      <a href="/pt/service.html">Dịch Vụ</a>
+      <a href="/tri/products.html">Sản Phẩm</a>
+      <a href="/trung/blog.html">Tin Tức</a>
+      <a href="/trung/hotline.html">Liên Hệ</a>
+    </nav>
+  </header>
+
+  <section class="intro-section">
+    <h2>Danh Sách Sản Phẩm</h2>
+
+    <!-- Bộ lọc -->
+    <div>
+      <select>
+        <option>Tất cả danh mục</option>
+        <option>Phần mềm</option>
+        <option>Thiết bị</option>
+        <option>Dịch vụ</option>
+      </select>
+
+      <select>
+        <option>Giá: Tất cả</option>
+        <option>Dưới 1 triệu</option>
+        <option>1 - 5 triệu</option>
+        <option>Trên 5 triệu</option>
+      </select>
+    </div>
+
+    <!-- Grid sản phẩm -->
+    <div class="grid">
+      <!-- đã thêm phần này vào js -->
+    </div>
+  </section>
+
+  <button id="backToTop" title="Lên đầu trang">
+            <a href="#top">⬆</a>
+        </button>
+  <footer class="footer">
+    <!-- Footer giống trong introduce.html -->
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Về Chúng Tôi</h3>
+        <p>Công ty L&P chuyên cung cấp giải pháp công nghệ hiện đại.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Liên Hệ</h3>
+        <ul>
+          <li>🏠 371 Nguyễn Kiệm, Gò Vấp</li>
+          <li>📞 83868386</li>
+          <li>📧 luckyandpower@L&P.com</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Liên Kết</h3>
+        <ul>
+          <li><a href="/index.html">Trang chủ</a></li>
+          <li><a href="/trang giới thiệu/introduce.html">Giới thiệu</a></li>
+          <li><a href="/pt/service.html">Dịch vụ</a></li>
+          <li><a href="/trung/blog.html">Tin Tức</a></li>
+          <li><a href="/trung/hotline.html">Liên Hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Kết Nối</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Công ty L&P</div>
+  </footer>
+</body>
+<script src="products.js"></script>
+</html>

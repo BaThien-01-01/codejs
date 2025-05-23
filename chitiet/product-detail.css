@@ -1,0 +1,81 @@
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  flex: 1;
+  max-width: 600px;
+}
+
+.details h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* Nút Thêm vào giỏ hàng */
+button {
+  padding: 12px 28px;
+  font-size: 17px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Nút Quay lại */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #2c3e50, #1c2833);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
