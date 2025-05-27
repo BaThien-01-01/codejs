@@ -77,7 +77,7 @@ function displayProducts() {
       <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>Giá: ${product.price}</p>
-      <a href="/chitiet/product-detail2.html?id=${product.id}">Xem chi tiết</a>
+      <a href="./chitiet/product-detail2.html?id=${product.id}">Xem chi tiết</a>
     `;
     grid.appendChild(box);
   });
