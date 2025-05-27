@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="total.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="formtotal" ><h1><strong>THANH TOÁN</strong></h1></label>
+    <div class="designer">
+    <form id="formtotal">
+          <label for="name">họ và tên</label>
+        <input type="text" id="name" placeholder="Họ VÀ Tên" required>
+            <label for="phone">số điện thoại</label>
+        <input type="text" id="phone" placeholder="Số Điện Thoại" required>
+          <label for="email">email</label>
+        <input type="email" name="" id="email"placeholder="email" required>
+              <label for="address">địa chỉ</label>
+        <input type="text" id="address" placeholder="Địa Chỉ" required>
+        <h2>phương thức thanh toán</h2>
+     <select name="" id="methodpay" onchange="toggleNumberCard()" >
+        <option value="notmethod"></option>
+        <option value="paycard">visa/mastercad</option>
+         <option value="banking">chuyển khoản</option>
+         <option value="local">thanh toán khi nhận hàng</option>
+     </select>
+     <div id="numbercard">
+        <label for="paycard">só thẻ</label>
+     <input type="text" id="number"> 
+            
+      </div>
+      <div id="bank-url" >
+        <label for="banking">chuyển khoản vào đây</label>
+        <div >
+        <img class="picture" src="/img/z6103393916195_9869983b6d27dcd177fb73b3eb961665.jpg" alt="ảnh Url">
+        </div>
+      </div>
+     
+        <button type="submit" id="accept">xác nhận</button>
+    </form>
+    </div>
+</body>
+<script src="total.js"></script>
+<script> 
+document.addEventListener("DOMContentLoaded", function() {
+  toggleNumberCard();
+});
+// document.addEventListener("submit",function(){
+//  accepttotal ();
+
+
+// });
+
+
+document.addEventListener("submit",function(){
+ 
+ check();
+
+});
+
+
+
+ </script>
+</html>

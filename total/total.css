@@ -1,0 +1,49 @@
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+     font-size: clamp(14px, 1.2vw, 18px);
+}
+
+
+h1{
+text-align: center;
+}
+    input, select, button {
+  width: 100%; /* chiếm trọn chiều rộng form */
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box; /* rất quan trọng */
+}
+input:focus {
+  border: 2px solid #3366cc;
+  outline: none;
+  background-color: #eef3ff;
+}
+
+#formtotal{
+      flex-direction: column;
+}
+.designer{
+   width: 400px;
+      margin: 0 auto; /* canh giữa form */
+      padding: 200px;
+      border-radius: 10px;
+background-color: rgba(34, 76, 152, 0.25);
+
+}
+
+#numbercard-section {
+      display: none;
+      margin-top: 10px;
+    }
+#bank-url-section{
+          display: none;
+      margin-top: 10px;
+
+}
+.picture{
+    width: 500px;
+}
+
