@@ -1,7 +1,7 @@
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
-}
+} 
 
 const currentProductId = parseInt(getQueryParam("id"));
 
@@ -15,7 +15,6 @@ if (Number.isNaN(currentProductId) || currentProductId < 0 || currentProductId >
   document.getElementById("product-name").textContent = product.name;
   document.getElementById("product-price").textContent = `Giá: ${product.price}`;
   document.getElementById("product-description").textContent = product.description;
-
   document.getElementById("add-to-cart").addEventListener("click", () => {
   addToCart(product.id);
   window.location.href = "/giohang/cart.html";  // <-- chuyển sang trang giỏ hàng

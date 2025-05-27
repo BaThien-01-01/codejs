@@ -1,5 +1,3 @@
-
-
 const products = [
   // Giữ nguyên danh sách sản phẩm từ products.js của bạn, cần có id thêm:
   { id: 1, name: 'Màn hình HKC MB27V9 27" IPS 75Hz', price: 2050000, image: '/img/MH1.png' },
@@ -82,7 +80,6 @@ function renderCart() {
       let qty = parseInt(e.target.value);
       if (isNaN(qty) || qty < 1) qty = 1;
       e.target.value = qty;
-
       updateQuantity(id, qty);
     });
   });
